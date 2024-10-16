@@ -1,0 +1,20 @@
+.parent{
+    list-style: none;
+    padding-left: 10px;
+}
+.parent li{
+    background-color: #eee;
+    margin-top: 10px;
+    padding: 10px;
+}
+.html li, .css li,.js li{
+    background-color: white;
+    margin-top: 3px;
+}
+.css li{
+    list-style-type: upper-roman;
+}
+.js{
+    list-style-position: inside;
+    padding-left: 0px;
+}

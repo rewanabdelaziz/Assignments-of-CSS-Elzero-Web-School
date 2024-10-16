@@ -1,0 +1,42 @@
+div{
+    width: 400px;
+    font-family: sans-serif;
+    background-color: #ccc;
+    margin: auto;
+    position: relative;
+    padding: 20px;
+    border-top: 2px solid #f44336;
+    border-bottom: 2px solid #f44336;
+    border-left: 2px solid #0075ff;
+    border-right: 2px solid #0075ff;
+    text-align: center;
+}
+span{
+    padding: 3px 12px;
+    color: white;
+    position: absolute;
+    background-color: #0075ff;
+    text-align: center;
+}
+.top-left, .bottom-left{
+    border-right: 2px solid #f44336;
+}
+.top-right, .bottom-right{
+    border-left: 2px solid #f44336;
+}
+.top-left{
+    top: -10px;
+    left: -15px;
+}
+.bottom-left{
+    bottom: -10px;
+    left: -15px;
+}
+.top-right{
+    top: -10px;
+    right: -15px;
+}
+.bottom-right{
+    bottom: -10px;
+    right: -15px;
+}

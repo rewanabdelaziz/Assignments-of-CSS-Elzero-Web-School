@@ -1,0 +1,32 @@
+.parent{
+    width: 1000px;
+    background-color: #dbdbdb;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 20px
+}
+.parent div {
+    margin-left: 15px;
+    margin-top: 15px;
+    background-color: #c8c7c7;
+    float: left;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.clear{
+    clear: both;
+}
+.full{
+    width: calc(100% - 30px);
+}
+.three{
+    width: calc((100% - 60px) / 3);
+}
+.two{
+    width: calc((100% - 45px) / 2);
+}
+.four{
+    width: calc((100% - 75px) / 4);
+    margin-bottom: 15px;
+}

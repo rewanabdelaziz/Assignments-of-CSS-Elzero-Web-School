@@ -1,0 +1,48 @@
+/* Task 1 */
+br + div{
+    padding: 20px;
+    border: 2px solid rgb(244 67 54);
+    width: 50%;
+    margin: auto;
+}
+br + div p{
+    padding: inherit;
+    border: inherit;
+    text-align: center;
+    background-color: #dbdbdb;
+    font-family: sans-serif;
+    font-size: 30px;
+    margin: 0;
+}
+/* task 2 */
+.task2,.task3{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 50px;
+}
+.t1{
+    font-weight: 300;
+    font-style: italic;
+    font-family: "Open Sans";
+}
+.t2{
+    font-weight: 700;
+    font-family: "Cairo";
+}
+.t3{
+    font-weight: 400;
+    font-family: "jomhuria";
+}
+/* Task 3 */
+html{
+    font-size: 20px;
+}
+.t31{
+    font-size: 2.5rem;
+}
+.t32{
+    font-size: 2rem;
+}
+.t33{
+    font-size: 1.5rem;
+}
