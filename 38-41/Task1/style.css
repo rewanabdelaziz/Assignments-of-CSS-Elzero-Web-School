@@ -1,0 +1,39 @@
+div:empty{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color: #eee;
+    border: 2px solid black;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 20px;
+    counter-increment: num;
+    position: relative;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    box-shadow: -5px -5px 0 0 #e91e63,5px 5px 0 0 #2196f3;
+}
+div::before{
+    content: counter(num);
+    position: absolute;
+    background-color: black;
+    color: white;
+    top: -10px;
+    left: 40%;
+    font-size: 15px;
+    padding: 3px 7px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+div::after{
+    content: "Element";
+    position: absolute;
+    top: 40%;
+    left: 23%;
+}

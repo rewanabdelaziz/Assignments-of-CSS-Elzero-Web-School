@@ -1,0 +1,14 @@
+div:empty{
+    width: 100px;
+    height: 100px;
+    background-color: #efefef;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 3px 3px 10px #7c7c7c,inset -3px -3px 5px #7c7c7c;
+}
