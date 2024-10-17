@@ -1,0 +1,34 @@
+.parent,.child{
+    font-family: sans-serif;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.parent{
+    background-color: #eee;
+    height: 200px;
+    margin-top: 70px;
+    width: 400px;
+    transition: margin 0.5s  ;
+    -webkit-transition: margin 0.5s  ;
+    -moz-transition: margin 0.5s  ;
+    -ms-transition: margin 0.5s  ;
+    -o-transition: margin 0.5s  ;
+}
+.parent:hover,.child{
+    margin-top: 20px;
+}
+.child{
+    background-color: #d4d4d4;
+    width: 90%;
+    transition: margin 0.5s 0.5s ;
+    -webkit-transition: margin 0.5s 0.5s ;
+    -moz-transition: margin 0.5s 0.5s ;
+    -ms-transition: margin 0.5s 0.5s ;
+    -o-transition: margin 0.5s 0.5s ;
+}
+.parent:hover .child{
+    margin-top: 70px;
+}
