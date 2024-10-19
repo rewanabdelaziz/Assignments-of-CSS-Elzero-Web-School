@@ -1,0 +1,35 @@
+div{
+    width: 600px;
+    margin: auto;
+    font-size: 30px;
+    font-weight: 800;
+    border-left: 10px solid #f44336;
+    border-right: 10px solid #673ab7;
+    background-color: #eee;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 40px;
+    letter-spacing: 5px;
+    position: relative;
+}
+div::first-letter{
+    color: #f44336;
+}
+div::before{
+    content: '';
+    height: 10px;
+    position: absolute;
+    width: 600px;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right ,#f44336 20%, #2196f3 20%,#2196f3 40% ,#4caf50 40%, #4caf50 60%  ,#e91e63 60%, #e91e63 80%,#673ab7 80%  );
+}
+div::after{
+    content: '';
+    height: 10px;
+    position: absolute;
+    width: 600px;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right ,#f44336 20%, #2196f3 20%,#2196f3 40% ,#4caf50 40%, #4caf50 60%  ,#e91e63 60%, #e91e63 80%,#673ab7 80%  );
+}
