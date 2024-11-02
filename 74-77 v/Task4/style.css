@@ -1,0 +1,137 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.el{
+    padding: 20px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    position: relative;
+}
+.e , .l{
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+    grid-template-rows: repeat(9,50px);
+    gap: 0;
+}
+.e div, .l div{
+    box-sizing: border-box;
+    background-color: #323234;
+    border:none;
+    outline: none;
+    margin: 0;
+}
+.l .row1{
+    grid-row: 1/9;
+}
+.l .row2{
+    grid-row-start: 9;
+    grid-column: 1/5;
+}
+.e .row1{
+    grid-column: 1/5;
+}
+.e .row2{
+    grid-row: 2/5;
+}
+.e .row3{
+    grid-row-start: 5;
+    grid-column: 1/5;
+}
+.e .row4{
+    grid-row: 6/9;
+}
+.e .row5{
+    grid-row-start: 9;
+    grid-column: 1/5;
+}
+.el::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #fea604;
+    top: 25px;
+    left: 175px;
+    animation-name: move-e;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+.el::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #fea604;
+    bottom: 25px;
+    right: 50px;
+    opacity: 0;
+    animation-name: move-l;
+    animation-duration: 4s;
+    animation-delay: 5s;
+    animation-timing-function: linear;
+}
+@keyframes move-l{
+    25%{
+        bottom: 25px;
+        right: 50px;
+        opacity: 1;
+    }
+    50%{
+        right: 200px;
+        bottom: 25px;
+        opacity: 1;
+    }
+    75%{
+        right: 200px;
+        bottom: 425px;
+        opacity: 1;
+    }
+    100%{
+        right: 200px;
+        bottom: 425px;
+        opacity: 0;
+    }
+}
+@keyframes move-e{
+    12%{
+        top: 25px;
+        left: 25px;
+    }
+    24%{
+        top: 225px;
+        left: 25px;
+    }
+    36%{
+        top: 225px;
+        left: 175px;
+    }
+    48%{
+        top: 225px;
+        left: 25px;
+    }
+    60%{
+        top: 425px;
+        left: 25px;
+    }
+    72%{
+        top: 425px;
+        left: 175px;
+    }
+    84%{
+        top: 425px;
+        left: 25px;
+    }
+    92%{
+        top: 25px;
+        left: 25px;
+    }
+    100%{
+        top: 25px;
+        left: 175px;
+    }
+}

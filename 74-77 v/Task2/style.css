@@ -1,0 +1,77 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+div{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 5px solid;
+    border-color: #2497e8 #2497e8 transparent #2497e8 ;
+    box-sizing: border-box;
+    animation-name: spinner;
+    animation-duration: 1s;
+    animation-play-state: paused;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation-iteration-count: infinite;
+}
+div::before{
+    content: '';
+    position: absolute;
+    width: 170%;
+    height: 170%;
+    box-sizing: border-box;
+    border: 5px solid;
+    top: -15px;
+    left: -15px;
+    border-color: #fca300  #fca300 transparent #fca300;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation-name: spinner;
+    animation-duration: 1.5s;
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+}
+div::after{
+    content: '';
+    position: absolute;
+    width: 220%;
+    height: 220%;
+    box-sizing: border-box;
+    border: 5px solid;
+    top: -25px;
+    left: -25px;
+    border-color: #000 #000 transparent #000;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation-name: spinner;
+    animation-duration: 2s;
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+}
+div:hover, div:hover::before, div:hover::after{
+    animation-play-state: running;
+    animation-timing-function: linear;
+}
+
+@keyframes spinner {
+    to{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+}
