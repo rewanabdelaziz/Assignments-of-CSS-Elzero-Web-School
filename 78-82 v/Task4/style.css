@@ -1,0 +1,3 @@
+body > [title="Elzero"]:not(.no-need),[title="Hello"],[title="HTML"]{
+    color: red;
+}
